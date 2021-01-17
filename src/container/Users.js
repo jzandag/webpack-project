@@ -1,7 +1,7 @@
 
 import React, {Component} from 'react';
 
-class User extends Component {
+class Users extends Component {
 
     render() {
         return (

@@ -15,7 +15,7 @@ class App extends Component {
         return (
             <div>
                 <div>
-                    <Link to="/">Users</Link>
+                    <Link to="/">Users</Link> |
                     <Link to="/pizza">Pizza</Link>
                 </div>
                 <div>

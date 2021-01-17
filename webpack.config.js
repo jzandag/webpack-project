@@ -1,6 +1,7 @@
 
 const path = require('path')
 const autoprefixer = require('autoprefixer')
+const HTMLWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
     mode: 'development',                        //tells webpack how it should bundle our code
@@ -40,5 +41,11 @@ module.exports = {
                 loader: 'url-loader?limit=8000&name=images/[name].[ext]'
             }
         ]
-    }
+    },
+    plugins: [
+        new HTMLWebpackPlugin({
+            template: __dirname + '/src/index.html',                 //starting point for html plugin
+            inject: 'body'
+        })
+    ]
 }
